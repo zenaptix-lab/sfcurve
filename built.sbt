@@ -42,7 +42,7 @@ lazy val commonSettings = Seq(
         </developer>
       </developers>),
   shellPrompt := { s => Project.extract(s).currentProject.id + " > " }
-) ++ net.virtualvoid.sbt.graph.Plugin.graphSettings
+)
 
 lazy val root =
   Project("sfcurve", file("."))
