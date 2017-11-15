@@ -11,7 +11,6 @@ lazy val commonSettings = Seq(
   scalacOptions ++= Seq(
     "-deprecation",
     "-unchecked",
-    "-Yinline-warnings",
     "-language:implicitConversions",
     "-language:reflectiveCalls",
     "-language:postfixOps",
@@ -42,7 +41,7 @@ lazy val commonSettings = Seq(
         </developer>
       </developers>),
   shellPrompt := { s => Project.extract(s).currentProject.id + " > " }
-)
+) 
 
 lazy val root =
   Project("sfcurve", file("."))
